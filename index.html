@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALLLightNovel - Your Ultimate Light Novel Reading Platform</title>
+    <meta name="description" content="Discover the best Light Novel all in one place. Read your favorite stories anytime, anywhere on ALLLightNovel.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background: #f7f7fa;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #7f5af0 0%, #2cb67d 100%);
+            color: #fff;
+            padding: 2rem 1rem 1rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0 0 1rem 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: text-decoration 0.2s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #7f5af0;
+        }
+        .novel-list, .genre-list, .review-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .novel-card, .genre-card, .review-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(127,90,240,0.07);
+            padding: 1rem;
+            flex: 1 1 220px;
+            min-width: 200px;
+            max-width: 260px;
+        }
+        .novel-card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+            color: #222;
+        }
+        .novel-card a {
+            color: #2cb67d;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .novel-card a:hover {
+            text-decoration: underline;
+        }
+        .genre-card {
+            text-align: center;
+            font-weight: 500;
+            color: #7f5af0;
+        }
+        .review-card {
+            font-size: 0.98rem;
+            color: #444;
+        }
+        .review-author {
+            margin-top: 0.5rem;
+            font-weight: 700;
+            color: #2cb67d;
+        }
+        .about, .footer {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(127,90,240,0.07);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #888;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 0.5rem;
+            }
+            .novel-list, .genre-list, .review-list {
+                flex-direction: column;
+            }
+            .novel-card, .genre-card, .review-card {
+                min-width: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ALLLightNovel</h1>
+        <p>Discover the best Light Novel all in one place. Read your favorite stories anytime, anywhere.</p>
+        <nav>
+            <a href="https://alllightnovel.com/">Home</a>
+            <a href="https://alllightnovel.com/">Latest</a>
+            <a href="https://alllightnovel.com/">Popular</a>
+            <a href="https://alllightnovel.com/">Genres</a>
+            <a href="https://alllightnovel.com/">Blog</a>
+            <a href="https://alllightnovel.com/">About</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div class="section-title">Featured Light Novel</div>
+            <div class="novel-list">
+                <div class="novel-card">
+                    <h3>The Princess’s Inner Thoughts Were Overheard by Her Emperor Father</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>Archean Eon Art</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>Superstars of Tomorrow</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>I Became An Immortal On Mortal Realm</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">Most Popular on ALLLightNovel</div>
+            <div class="novel-list">
+                <div class="novel-card">
+                    <h3>The Victim of the Academy</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>Living in this World with Cut & Paste</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>The Main Heroines are Trying to Kill Me</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>Heaven Official’s Blessing</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">Latest Updates</div>
+            <div class="novel-list">
+                <div class="novel-card">
+                    <h3>Archean Eon Art</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>The Princess’s Inner Thoughts Were Overheard by Her Emperor Father</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>Superstars of Tomorrow</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+                <div class="novel-card">
+                    <h3>I Became An Immortal On Mortal Realm</h3>
+                    <a href="https://alllightnovel.com/">Read Now</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">Browse by Genre</div>
+            <div class="genre-list">
+                <div class="genre-card"><a href="https://alllightnovel.com/">Fantasy</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Action</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Adventure</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Comedy</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Harem</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Romance</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Drama</a></div>
+                <div class="genre-card"><a href="https://alllightnovel.com/">Shounen Ai</a></div>
+            </div>
+        </section>
+        <section>
+            <div class="section-title">Reader Reviews</div>
+            <div class="review-list">
+                <div class="review-card">
+                    "ALLLightNovel has transformed my Light Novel reading experience. The vast collection and user-friendly interface make discovering new series a joy!"
+                    <div class="review-author">- Kenji Tanaka</div>
+                </div>
+                <div class="review-card">
+                    "The quality of Light Novel translations on ALLLightNovel is exceptional. They perfectly maintain the original essence while making it accessible."
+                    <div class="review-author">- Emily Wilson</div>
+                </div>
+                <div class="review-card">
+                    "ALLLightNovel's dark mode is perfect for late-night reading. The community recommendations helped me find amazing Light Novel!"
+                    <div class="review-author">- Ryan Lee</div>
+                </div>
+                <div class="review-card">
+                    "Reading Light Novel on ALLLightNovel's mobile interface is seamless. I can enjoy my favorite series anywhere!"
+                    <div class="review-author">- Sarah Henderson</div>
+                </div>
+                <div class="review-card">
+                    "ALLLightNovel's recommendation system is amazing! It perfectly matches my Light Novel preferences and reading taste."
+                    <div class="review-author">- Mike Kim</div>
+                </div>
+                <div class="review-card">
+                    "The frequent updates on ALLLightNovel keep me engaged. Best Light Novel platform for staying current with new releases!"
+                    <div class="review-author">- Anna Liu</div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="section-title">About Us</div>
+            <p>ALLLightNovel is your premier destination for Light Novel enthusiasts, offering the best reading experience and latest updates. Join millions of readers who trust ALLLightNovel as their primary Light Novel platform.</p>
+        </section>
+    </div>
+    <footer class="footer">
+        <div>© 2025-2035 <a href="https://alllightnovel.com/" style="color:#7f5af0;text-decoration:none;">ALLLightNovel</a> - The Best Light Novel Reading Platform. All rights reserved.</div>
+        <div style="margin-top:0.5rem;">
+            <a href="https://alllightnovel.com/">Home</a> |
+            <a href="https://alllightnovel.com/">A-Z Index</a> |
+            <a href="https://alllightnovel.com/">Latest Updates</a> |
+            <a href="https://alllightnovel.com/">Popular Novels</a> |
+            <a href="https://alllightnovel.com/">Genres</a> |
+            <a href="https://alllightnovel.com/">Blog</a>
+        </div>
+    </footer>
+</body>
+</html>
