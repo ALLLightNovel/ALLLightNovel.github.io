@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
     <style>
         :root {
-            --primary: #7f5af0;
-            --secondary: #2cb67d;
-            --bg: #f7f7fa;
+            --primary: #ffb347;
+            --secondary: #ffcc80;
+            --accent: #ff7043;
+            --bg: #fff8f0;
             --card-bg: #fff;
-            --text: #222;
-            --muted: #888;
+            --text: #4e2e0e;
+            --muted: #bfa77a;
         }
         body {
             font-family: 'Roboto', Arial, sans-serif;
@@ -22,15 +23,15 @@
             color: var(--text);
         }
         header {
-            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
             color: #fff;
-            padding: 2rem 1rem 1rem 1rem;
+            padding: 2.5rem 1rem 1.5rem 1rem;
             text-align: center;
-            border-radius: 0 0 24px 24px;
-            box-shadow: 0 4px 16px rgba(127,90,240,0.08);
+            border-radius: 0 0 32px 32px;
+            box-shadow: 0 4px 24px rgba(255,179,71,0.10);
         }
         header h1 {
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.7rem 0;
             font-size: 2.7rem;
             font-weight: 700;
             letter-spacing: 1px;
@@ -57,7 +58,7 @@
             text-decoration: underline;
         }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 2rem 1.5rem 1.5rem 1.5rem;
         }
@@ -68,49 +69,32 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 1.2rem;
-            color: var(--primary);
+            color: var(--accent);
             letter-spacing: 0.5px;
         }
-        .novel-list, .genre-list, .review-list {
+        .genre-list, .review-list {
             display: flex;
             flex-wrap: wrap;
             gap: 1.2rem;
         }
-        .novel-card, .genre-card, .review-card {
+        .genre-card, .review-card {
             background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(127,90,240,0.07);
+            box-shadow: 0 2px 12px rgba(255,179,71,0.07);
             padding: 1.2rem 1rem;
-            flex: 1 1 220px;
-            min-width: 200px;
-            max-width: 260px;
+            flex: 1 1 180px;
+            min-width: 140px;
+            max-width: 220px;
             transition: transform 0.15s, box-shadow 0.15s;
-        }
-        .novel-card:hover, .genre-card:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 6px 24px rgba(127,90,240,0.13);
-        }
-        .novel-card h3 {
-            margin: 0 0 0.5rem 0;
-            font-size: 1.1rem;
-            color: var(--text);
-        }
-        .novel-card a {
-            color: var(--secondary);
-            text-decoration: none;
-            font-size: 0.97rem;
-        }
-        .novel-card a:hover {
-            text-decoration: underline;
         }
         .genre-card {
             text-align: center;
             font-weight: 500;
-            color: var(--primary);
+            color: var(--accent);
             font-size: 1.05rem;
         }
         .genre-card a {
-            color: var(--primary);
+            color: var(--accent);
             text-decoration: none;
         }
         .genre-card a:hover {
@@ -118,17 +102,17 @@
         }
         .review-card {
             font-size: 0.98rem;
-            color: #444;
+            color: #7a4c1e;
         }
         .review-author {
             margin-top: 0.5rem;
             font-weight: 700;
-            color: var(--secondary);
+            color: var(--primary);
         }
         .about, .footer {
             background: var(--card-bg);
             border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(127,90,240,0.07);
+            box-shadow: 0 2px 8px rgba(255,179,71,0.07);
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
@@ -141,10 +125,10 @@
             .container {
                 padding: 0.5rem;
             }
-            .novel-list, .genre-list, .review-list {
+            .genre-list, .review-list {
                 flex-direction: column;
             }
-            .novel-card, .genre-card, .review-card {
+            .genre-card, .review-card {
                 min-width: 0;
                 max-width: 100%;
             }
@@ -154,7 +138,7 @@
 <body>
     <header>
         <h1>ALLLightNovel</h1>
-        <p>Discover the best Light Novel all in one place. Read your favorite stories anytime, anywhere.</p>
+        <p>Discover the best Light Novel all in one place.<br>Read your favorite stories anytime, anywhere.</p>
         <nav>
             <a href="https://alllightnovel.com/">Home</a>
             <a href="https://alllightnovel.com/latest">Latest</a>
@@ -165,69 +149,6 @@
         </nav>
     </header>
     <div class="container">
-        <section>
-            <div class="section-title">Featured Light Novel</div>
-            <div class="novel-list">
-                <div class="novel-card">
-                    <h3>The Princess’s Inner Thoughts Were Overheard by Her Emperor Father</h3>
-                    <a href="https://alllightnovel.com/novel/the-princesss-inner-thoughts-were-overheard-by-her-emperor-father">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>Archean Eon Art</h3>
-                    <a href="https://alllightnovel.com/novel/archean-eon-art">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>Superstars of Tomorrow</h3>
-                    <a href="https://alllightnovel.com/novel/superstars-of-tomorrow">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>I Became An Immortal On Mortal Realm</h3>
-                    <a href="https://alllightnovel.com/novel/i-became-an-immortal-on-mortal-realm">Read Now</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-title">Most Popular on ALLLightNovel</div>
-            <div class="novel-list">
-                <div class="novel-card">
-                    <h3>The Victim of the Academy</h3>
-                    <a href="https://alllightnovel.com/novel/the-victim-of-the-academy">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>Living in this World with Cut & Paste</h3>
-                    <a href="https://alllightnovel.com/novel/living-in-this-world-with-cut-paste">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>The Main Heroines are Trying to Kill Me</h3>
-                    <a href="https://alllightnovel.com/novel/the-main-heroines-are-trying-to-kill-me">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>Heaven Official’s Blessing</h3>
-                    <a href="https://alllightnovel.com/novel/heaven-officials-blessing">Read Now</a>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="section-title">Latest Updates</div>
-            <div class="novel-list">
-                <div class="novel-card">
-                    <h3>Archean Eon Art</h3>
-                    <a href="https://alllightnovel.com/novel/archean-eon-art">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>The Princess’s Inner Thoughts Were Overheard by Her Emperor Father</h3>
-                    <a href="https://alllightnovel.com/novel/the-princesss-inner-thoughts-were-overheard-by-her-emperor-father">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>Superstars of Tomorrow</h3>
-                    <a href="https://alllightnovel.com/novel/superstars-of-tomorrow">Read Now</a>
-                </div>
-                <div class="novel-card">
-                    <h3>I Became An Immortal On Mortal Realm</h3>
-                    <a href="https://alllightnovel.com/novel/i-became-an-immortal-on-mortal-realm">Read Now</a>
-                </div>
-            </div>
-        </section>
         <section>
             <div class="section-title">Browse by Genre</div>
             <div class="genre-list">
@@ -240,6 +161,17 @@
                 <div class="genre-card"><a href="https://alllightnovel.com/genre/drama">Drama</a></div>
                 <div class="genre-card"><a href="https://alllightnovel.com/genre/shounen-ai">Shounen Ai</a></div>
             </div>
+        </section>
+        <section>
+            <div class="section-title">Why Choose ALLLightNovel?</div>
+            <ul style="line-height:2; color:#a05a1c; font-size:1.08rem; margin:0 0 1.5rem 1.2rem;">
+                <li>Access thousands of Light Novel titles in our extensive collection.</li>
+                <li>Get the fastest Light Novel updates.</li>
+                <li>Read on any device, anytime, anywhere.</li>
+                <li>Enjoy Light Novels in multiple languages.</li>
+                <li>Join an active community of Light Novel fans.</li>
+                <li>Discover new Light Novels tailored to your taste.</li>
+            </ul>
         </section>
         <section>
             <div class="section-title">Reader Reviews</div>
@@ -260,23 +192,18 @@
                     "Reading Light Novel on ALLLightNovel's mobile interface is seamless. I can enjoy my favorite series anywhere!"
                     <div class="review-author">- Sarah Henderson</div>
                 </div>
-                <div class="review-card">
-                    "ALLLightNovel's recommendation system is amazing! It perfectly matches my Light Novel preferences and reading taste."
-                    <div class="review-author">- Mike Kim</div>
-                </div>
-                <div class="review-card">
-                    "The frequent updates on ALLLightNovel keep me engaged. Best Light Novel platform for staying current with new releases!"
-                    <div class="review-author">- Anna Liu</div>
-                </div>
             </div>
         </section>
         <section class="about">
             <div class="section-title">About Us</div>
-            <p>ALLLightNovel is your premier destination for Light Novel enthusiasts, offering the best reading experience and latest updates. Join millions of readers who trust ALLLightNovel as their primary Light Novel platform.</p>
+            <p style="color:#a05a1c;">
+                ALLLightNovel is your premier destination for Light Novel enthusiasts, offering the best reading experience and latest updates.<br>
+                Join millions of readers who trust ALLLightNovel as their primary Light Novel platform.
+            </p>
         </section>
     </div>
     <footer class="footer">
-        <div>© 2025-2035 <a href="https://alllightnovel.com/" style="color:#7f5af0;text-decoration:none;">ALLLightNovel</a> - The Best Light Novel Reading Platform. All rights reserved.</div>
+        <div>© 2025-2035 <a href="https://alllightnovel.com/" style="color:#ffb347;text-decoration:none;">ALLLightNovel</a> - The Best Light Novel Reading Platform. All rights reserved.</div>
         <div style="margin-top:0.5rem;">
             <a href="https://alllightnovel.com/">Home</a> |
             <a href="https://alllightnovel.com/a-z-index">A-Z Index</a> |
@@ -287,4 +214,4 @@
         </div>
     </footer>
 </body>
-</html> 
+</html>
